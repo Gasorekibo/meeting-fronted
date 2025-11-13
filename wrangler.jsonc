@@ -1,16 +1,24 @@
 {
-  "name": "schedule-meeting-app",
+  "name": "meeting-app",
   "version": "1.0.0",
   "compatibility_date": "2025-11-13",
+
+  // ──────────────────────── Cloudflare Pages ────────────────────────
   "pages": {
-
-    "build_output_directory": "dist",
-
+    "build_output_directory": "dist"
   },
 
+  // ──────────────────────── Static assets ────────────────────────
+  "assets": {
+    "directory": "./dist"
+  },
+
+  // ──────────────────────── Build command ────────────────────────
   "build": {
     "command": "npm run build"
   },
+
+  // ──────────────────────── Local dev ────────────────────────
   "dev": {
     "command": "npm run dev",
     "port": 5173
